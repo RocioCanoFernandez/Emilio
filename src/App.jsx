@@ -7,7 +7,6 @@ function App() {
   const linksRef = useRef(null);
 
   // Uncomment when WhatsApp URL is confirmed
-  /*
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -28,7 +27,6 @@ function App() {
       if (linksRef.current) observer.unobserve(linksRef.current);
     };
   }, []);
-  */
 
   const data = {
     company: "ENFRIAMOS HVAC",
@@ -45,7 +43,7 @@ function App() {
     seviaiLogoUrl: "/logo_sin_fondo.png",
     
     // Pending items
-    // whatsappUrl: "https://wa.me/34653252023",
+    whatsappUrl: "https://wa.me/34653252023",
     // dossierUrl: "#",
     // instagram: "#",
     // facebook: "#"
@@ -318,9 +316,8 @@ END:VCARD`;
         </a>
       </div>
 
-      {/* Pending WhatsApp floating CTA - Hidden until confirmation */}
-      {/* 
-      <div className={\`floating-whatsapp-wrapper \${showCta ? 'visible' : ''}\`}>
+      {/* WhatsApp floating CTA */}
+      <div className={`floating-whatsapp-wrapper ${showCta ? 'visible' : ''}`}>
         <a 
           href={data.whatsappUrl}
           target="_blank" 
@@ -333,7 +330,6 @@ END:VCARD`;
           </svg>
         </a>
       </div>
-      */}
     </div>
   )
 }

@@ -355,9 +355,9 @@ body {
 }
 
 .fab-whatsapp {
-  background-color: var(--primary-color); /* Per prompt, not default green */
+  background-color: var(--accent-color); /* Per prompt, red logo color */
 }
 
 .fab-whatsapp:hover {
-  background-color: var(--accent-color);
+  background-color: var(--accent-dark);
 }
