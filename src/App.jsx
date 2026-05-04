@@ -44,7 +44,7 @@ function App() {
     
     // Pending items
     whatsappUrl: "https://wa.me/34653252023",
-    // dossierUrl: "#",
+    dossierUrl: "https://drive.google.com/file/d/1HvickE13xT3RgoNo3Mi1Xaj6VW7UAeK4/view",
     // instagram: "#",
     // facebook: "#"
   }
@@ -196,8 +196,6 @@ END:VCARD`;
             <ChevronRight size={20} className="link-arrow" />
           </a>
 
-          {/* Pending Links - Hidden until confirmation */}
-          {/*
           <a href={data.dossierUrl} target="_blank" rel="noopener noreferrer" className="link-card">
             <div className="link-card-left">
               <div className="link-icon-container">
@@ -207,6 +205,9 @@ END:VCARD`;
             </div>
             <ChevronRight size={20} className="link-arrow" />
           </a>
+
+          {/* Pending Links - Hidden until confirmation */}
+          {/*
           <a href={data.whatsappUrl} target="_blank" rel="noopener noreferrer" className="link-card">
             <div className="link-card-left">
               <div className="link-icon-container">
