@@ -51,7 +51,7 @@ function App() {
 
   const vCardData = `BEGIN:VCARD
 VERSION:3.0
-FN:${data.name}
+N:;${data.name};;;\nFN:${data.name}
 ORG:${data.company}
 TITLE:${data.role}
 TEL;TYPE=WORK,VOICE:${data.phoneUrl}
